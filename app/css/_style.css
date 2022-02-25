@@ -1,0 +1,145 @@
+.logo {
+  top: 0px;
+  width: 245px;
+}
+
+.title {
+  font-weight: 700;
+  font-family: "Palatino";
+  color: black;
+  text-align: right;
+  font-size: 130%;
+  text-decoration: none;
+}
+/* change this for desktop view */
+@media screen and (min-width: 760px) {
+  .title {
+    padding-top: 64px;
+  }
+}
+
+nav {
+  float: left;
+}
+
+nav > a:hover,
+nav #active-nav {
+  color: black;
+}
+
+nav > a {
+  text-decoration: none;
+  font-family: "Avenir", sans-serif;
+  color: grey;
+  text-align: left;
+  font-size: 90%;
+  display: flex;
+}
+
+nav > a:hover {
+  color: black;
+}
+
+.navbar > a:hover,
+.navbar #active-nav {
+  color: black;
+}
+
+.about > a {
+  font-size: 90%;
+  color: grey;
+  text-decoration: none;
+  text-align: left;
+  font-family: "Avenir", sans-serif;
+}
+
+.about > a:hover {
+  color: black;
+}
+
+.footer {
+  font-family: "Palatino";
+  text-align: center;
+  padding-top: 2%;
+  font-size: 85%;
+  display: block;
+  color: grey;
+}
+
+.pic {
+  max-width: 600px;
+
+  margin: auto;
+
+  margin-top: 8%;
+
+  margin-bottom: 8%;
+
+  align-content: center;
+
+  justify-content: center;
+}
+
+.credits {
+  text-align: right;
+  color: grey;
+  padding-right: 1%;
+  font-size: 90%;
+}
+
+p {
+  text-align: center;
+  font-family: "Palatino";
+  padding-top: 1%;
+}
+
+.duo {
+  display: flex;
+
+  max-width: 1000px;
+
+  margin: auto;
+
+  margin-top: 5%;
+
+  margin-bottom: 5%;
+
+  align-content: center;
+
+  justify-content: center;
+}
+
+.portrait {
+  max-width: 220px;
+  padding-bottom: 1%;
+  max-width: 100%;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+.landscape {
+  max-width: 350px;
+  padding-bottom: 1%;
+  max-width: 100%;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+.gallery {
+  max-width: 1000px;
+
+  margin: auto;
+
+  margin-bottom: 8%;
+
+  align-content: center;
+
+  justify-content: center;
+}
+
+#right1 {
+  max-width: 50%;
+}
+#left1 {
+  max-width: 50%;
+}
