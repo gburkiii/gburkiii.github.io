@@ -6,7 +6,7 @@ body.lb-disable-scrolling {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-home: 9999;
   background-color: black;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
@@ -17,7 +17,7 @@ body.lb-disable-scrolling {
   position: absolute;
   left: 0;
   width: 100%;
-  z-index: 10000;
+  z-home: 10000;
   text-align: center;
   line-height: 0;
   font-weight: normal;
@@ -82,7 +82,7 @@ body.lb-disable-scrolling {
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 10;
+  z-home: 10;
 }
 
 .lb-container > .nav {
@@ -91,10 +91,11 @@ body.lb-disable-scrolling {
 
 .lb-nav a {
   outline: none;
-  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+  background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
 }
 
-.lb-prev, .lb-next {
+.lb-prev,
+.lb-next {
   height: 100%;
   cursor: pointer;
   display: block;
