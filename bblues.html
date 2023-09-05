@@ -15,17 +15,10 @@
 
 .pic {
     max-width: 400px;
-
-    margin: auto;
-        
-    margin-top:
-    8%;
-        
-    margin-bottom:
-    8%;
-        
+    margin: auto;   
+    margin-top: 8%;
+    margin-bottom: 8%;
     align-content: center;
-        
     justify-content: center;
 }
 
@@ -70,30 +63,20 @@ h5{
     margin-top: 70px;
 }
 
-#second {
-    text-align: right;
-}
-
 #jesus {
     max-width: 500px;
-
-    margin: auto;
-        
-    margin-bottom:
-    4%;
-        
+    margin: auto;   
+    margin-bottom: 4%;
     align-content: center;
-        
     justify-content: center;  
 }
 
 p {
-        
-        text-align: center;
-        font-family: "Palatino";
-        padding-top: 3%;
-        
+    text-align: center;
+    font-family: "Palatino";
+    padding-top: 3%;
     }
+
 
     /* change this for mobile view */
 @media screen and (min-width: 760px) {
@@ -102,71 +85,85 @@ p {
 }
 }
 
-        
-
 </style>
 </head>      
 
 
 <body>
+   
     <div class="relative min-h-screen md:flex">
 
         <!-- mobile menu bar -->
         <div class="flex justify-between md:hidden top-0 bg-white w-13/14 mx-auto">
-            <!-- logo -->
-            <a href="index.html"><img class="logo" src="https://port888.s3.us-west-1.amazonaws.com/Assets/Title.png" alt="my logo" width="200"></a>
-            <!-- mobile menu button -->
-            <button class="mobile-menu-button p-4 focus:outline-none focus:colour-none">
-                <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-        </div>
+          <!-- logo -->
+          <div class="logo_div"><a href="index.html" class="flex items-center space-x-2 px-4">
+             <span class="text-2xl font-extrabold"><a class="georgia" href="index.html">Georgia Burki</a></span>
+         </a>
+      </div>
+         <!-- mobile menu button -->
+         <button class="mobile-menu-button p-4 focus:outline-none focus:colour-none">
+             <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 stroke="currentColor">
+                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+             </svg>
+         </button>
+      </div>
+      
+             <!-- sidebar -->
+             <div class="sidebar bg-white text-xl w-60 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+              <!-- nav -->
+              <nav class="logo_div">
+                  <!-- logo -->
+                  <div class="logo_div"><a href="index.html" class="flex items-center space-x-2 px-4">
+                      <span><a class="georgia" href="index.html">Georgia Burki</a></span>
+                  </a>
+                  </div>
+                  
+                      <div class="parent-box">
+                      <!-- about -->
+                          <div class="dropdown">
+                          <a class="dropbtn" href="about.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">About</a>
+                          </div>
+                          <br>
+                      <!-- blog -->
+                          <div class="dropdown">
+                          <a class="dropbtn" href="blog.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">Blog</a>
+                          </div>
+                          <br>
+                      <!-- current work -->          
+                          <div class="dropdown" >
+                          <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black" >Current Work</button></a>
+                              <div class="dropdown-content" id="first">
+                                <a href="painting.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">Painting</a>
+                                <a href="photography.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">Photography</a>
+                              </div>
+                          </div>
+                 
+                      <!-- projects -->     
+                          <div class="dropdown" >
+                          <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black" >Projects</button></a>
+                              <div class="dropdown-content" id="second">
+                                  <a href="abstract.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                                  Abstraction
+                                  </a>
+                                  <a href="bblues.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                                  Balkan Blues
+                                  </a>
+                                  <a href="bluedream.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                                  Blue Dream
+                                  </a>
+                                  <a href="casa.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                                  Taste of Casablanca
+                                  </a>
+                                  <a href="africa.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                                  Out of Africa
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      </nav>
+              </div>
 
-        <!-- sidebar -->
-        <div class="sidebar bg-white text-xl w-65 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
-
-            <!-- logo -->
-            <a href="index.html" class="flex items-center space-x-2 px-4">
-                <span class="text-2xl font-extrabold"><a href="index.html"> <img class="logo" src="https://port888.s3.us-west-1.amazonaws.com/Assets/Title.png"
-                            alt="my logo"></a></span>
-            </a>
-            <!-- nav -->
-            <nav>
-                <a href="abstract.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Abstract
-                </a>
-                <a href="bblues.html" id="active-nav" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Balkan Blues
-                </a>
-                <a href="bluedream.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Blue Dream
-                </a>
-                <a href="colours.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Colours
-                </a>
-                <a href="ceramics.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Grounded
-                </a>
-                <a href="casa.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Taste of Casablanca
-                </a>
-                <a href="africa.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Out of Africa
-                </a>
-                <a href="about.html"
-                    class="text-sm block py-3 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    About
-                </a>
-                <a href="contact.html"
-                    class="text-sm block py-2 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Contact
-                </a>
-            </nav>
-        </div>
-    
-</p>
     <!-- content -->
     <div class="flex-1 p-10 px-auto">
 <div class="title"><h2 class="page-title">Balkan Blues</h2></div><br>
@@ -181,49 +178,16 @@ Reflects the rainbow of a thunderstorm<br>
 Which in a distant valley has been staged<br>
 For we are most artistically caged.<br><br></p>
 </div>
-<div id="vlad">Vladimir Nabokov in <i>Pale Fire</i>, 1962</div>
+<div id="vlad">Vladimir Nabokov in <i>Pale Fire</i>, 1962<br></div>
 <div id="text">
-<br>A lifelong goal of mine is to make the invisible somewhat visible. The painting largely plays on perception, questioning what is real and what is not; feelings and emotions are real yet not physical. The language of the unconscious is non-verbal, it consists of images, symbols and emotions—where this scene comes from. 
-<br><br>
-This scene is based in Jagodina, a village in the south of Bulgaria founded by my great grandfather, a respected Imam who built the mosque and roads. 
-<br><br>
-The woman with self-generating energy represents universal enlightenment, nature and its beautiful array of colours. It is an adaptation of William Blake’s 1796 piece <i>Glad Day Or The Dance Of Albion</i>. She seems to be a figment of imagination, yet for me, she is largely a state of mind which is wholly attainable. She is not fictious but a self-portrait. More pertinently, she represents something larger than myself: the powerful creative force.
-<br><br>
-The title is not so much an association to Christianity but its birth, Jesus, and evidently gender. Through this question, I wonder if the self would have been liberated, or at best, averted from thousands of years of patriarchal religious oppression. Exploring the roots of social and cultural power found in Western Judio-Christian-Islamic religion and its symbols, ideas and language structure that essentially oppress women as they are all male-oriented. I want to challenge the stereotypical boundaries imposed by God-language. 
-<br><br>
-I want this piece to feed into this new language of women’s spirituality and goddess imagery and serve as a transformation. I am inspired by female artists such as Dorothea Tanning and Leonora Carrington. Mary Beth Edelson, referencing her <i>Woman Rising</i> series, perceived goddess imagery as a metaphor for “radical change and change of consciousness…while opening other realms of experience”. Challenging the status-quo is a “profoundly political act against the patriarchy and for spiritual liberation—the ramifications of which are still unfolding.”
-<br><br>
-What is this power we have within and where is it? According to Jung, man is not
-created in God’s image, but rather we are all Gods and Goddesses... for self is truly divine.<br><br><br>
-</div>
-<div id="jesus">
-    <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/BalkanBlues/IMG_6600.jpg" data-lightbox="mygallery"><img src="https://port888.s3.us-west-1.amazonaws.com/Assets/BalkanBlues/IMG_6600.jpg"></a>
-</div>
-<div id="text">
-<h5><i>Yagodina, Bulgaria</i></h5><br>
-    As we know, the best ideas spur out of nowhere - this is exactly where my idea to capture Bulgaria in its simplicity 
-    came from. It is the first one of my photography projects where I seek to build a bridge across generations and cultures 
-    and convey personal scenes that still remain universal. As Paulo Coelho said, it is part of the human condition to want to share things—thoughts, ideas, opinions. Although at first I simply shot scenes that caught my attention, my goal 
-    eventually crystallised; I wanted to enable any viewer to feel immersed in my photographs. Like a time machine, I 
-    yearned to make the viewer to feel absorbed in this different culture that alludes to the one of our ancestors.
+<h5><i><br>Yagodina, Bulgaria</i></h5><br>
+As we know, the best ideas spur out of nowhere - this is exactly where my idea to capture Bulgaria in its simplicity came from. It is the first one of my photography projects where I seek to build a bridge across generations and cultures and convey personal scenes that still remain universal. As Paulo Coelho said, it is part of the human condition to want to share things—thoughts, ideas, opinions. Although at first I simply shot scenes that caught my attention, my goal eventually crystallised; I wanted to enable any viewer to feel immersed in my photographs. Like a time machine, I yearned to make the viewer to feel at home in these ancestral scenes.
     <br><br>
-    As a self-taught artist, my aesthetics have heavily been influenced by Sally Mann and Robert Frank—two talented 
-    photographers who remain personal and relevant. However, my aspiration is Jimmy Nelson with his incredible shots of 
-    over 35 indigenous tribes: his own artistic interpretation and a celebration of diversity and beauty. My French 
-    grandfather has been a wonderful mentor and scolds me whenever he catches me using an automatic setting. Sharing 
-    these personal photographs on a website conveys my intention as a photographer—to share with a greater audience the beauty of my Bulgarian grandfather’s village located near the Greek border.
-    <br><br>
-    I chose black and white for this project to capture the stillness of each scene and instil a hint of nostalgia. By doing so, 
-    the viewer is not distracted by any colours, leaving only the subject and lines to permeate. To further enhance this, I was attracted to neat shots and straight lines, which contrasted the intimacy of the subject.
-    <br><br>
-    I discovered that the more specific I was in terms of what I capture, the more universal it becomes—so although my 
-    photographs remain unique and solely depict Bulgarian life, most viewers have found a way to feel connected, or at 
-    least drawn, to the images. This is due to the universality of humans as well as the reminiscence it holds to the previous 
-    generations. Overall, this creates this bizarre sense of familiarity, where we notice common themes. On a personal level, 
-    it enabled me to experience the beauty and traditional values of my country. Progressively, I started attaching more 
-    meaning to each shot I was taking, while building a more complex yet comprehensive narrative. One picture leads to 
-    another and they all function as a whole. Essentially, I sought to capture Yagodina’s essence before it gets transformed 
-    by technology or simply forgotten.
+    The painting is based in my village, Jagodina, close to the Greek border and south of Bulgaria. The woman with self-generating energy represents universal enlightenment and nature, emitting its beautiful array of colours. It is an adaptation of William Blake’s 1796 piece <i>'</i>'Glad Day Or The Dance Of Albion'</i>. She seems to be a figment of imagination, yet for me, she is largely a state of mind which is wholly attainable. She is not fictious but a self-portrait. More pertinently, she represents something larger than myself: the powerful creative force.
+<br><br>
+The title is not so much an association to Christianity but its birth, Jesus, and evidently gender. Through this question, I wonder if Self would have been liberated, or at best, averted from thousands of years of patriarchal religious oppression. Exploring the roots of social and cultural power found in Western Judio-Christian-Islamic religion and its symbols, ideas and male-oriented language that essentially oppress women. I want to challenge the stereotypical boundaries imposed by God-language.
+<br><br>
+Mary Beth Edelson, in her ‘Woman Rising’ series, perceives goddess imagery as a metaphor for “radical change and change of consciousness…while opening other realms of experience”. Challenging the status-quo is a “profoundly political act against the patriarchy and for spiritual liberation—the ramifications of which are still unfolding.” <b>What is this power we have within and where is it? According to Jung, man is not created in God’s image, but rather we are all Gods and Goddesses... for self is truly divine.</b>
 </div>
 <p id="second"><br><i>Summer 2018</i></p><br><br>
 <div class="gallery">

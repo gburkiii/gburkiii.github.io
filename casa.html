@@ -88,300 +88,316 @@
 <body>
     <div class="relative min-h-screen md:flex">
 
-        <!-- mobile menu bar -->
-        <div class="flex justify-between md:hidden top-0 bg-white w-13/14 mx-auto">
-            <!-- logo -->
-            <a href="index.html"><img class="logo" src="https://port888.s3.us-west-1.amazonaws.com/Assets/Title.png" alt="my logo" width="200"></a>
-            <!-- mobile menu button -->
-            <button class="mobile-menu-button p-4 focus:outline-none focus:colour-none">
-                <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-        </div>
+  <!-- mobile menu bar -->
+  <div class="flex justify-between md:hidden top-0 bg-white w-13/14 mx-auto">
+    <!-- logo -->
+    <div class="logo_div"><a href="index.html" class="flex items-center space-x-2 px-4">
+       <span class="text-2xl font-extrabold"><a class="georgia" href="index.html">Georgia Burki</a></span>
+   </a>
+</div>
+   <!-- mobile menu button -->
+   <button class="mobile-menu-button p-4 focus:outline-none focus:colour-none">
+       <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+           stroke="currentColor">
+           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+       </svg>
+   </button>
+</div>
 
-        <!-- sidebar -->
-        <div class="sidebar bg-white text-xl w-65 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
-
+       <!-- sidebar -->
+       <div class="sidebar bg-white text-xl w-60 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+        <!-- nav -->
+        <nav class="logo_div">
             <!-- logo -->
-            <a href="index.html" class="flex items-center space-x-2 px-4">
-                <span class="text-2xl font-extrabold"><a href="index.html"> <img class="logo" src="https://port888.s3.us-west-1.amazonaws.com/Assets/Title.png"
-                            alt="my logo"></a></span>
+            <div class="logo_div"><a href="index.html" class="flex items-center space-x-2 px-4">
+                <span><a class="georgia" href="index.html">Georgia Burki</a></span>
             </a>
-            <!-- nav -->
-            <nav>
-                <a href="abstract.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Abstract
-                </a>
-                <a href="bblues.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Balkan Blues
-                </a>
-                <a href="bluedream.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Blue Dream
-                </a>
-                <a href="colours.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Colours
-                </a>
-                <a href="ceramics.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Grounded
-                </a>
-                <a href="casa.html" id="active-nav" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Taste of Casablanca
-                </a>
-                <a href="africa.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Out of Africa
-                </a>
-                <a href="about.html"
-                    class="text-sm block py-3 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    About
-                </a>
-                <a href="contact.html"
-                    class="text-sm block py-2 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Contact
-                </a>
-            </nav>
+            </div>
+            
+                <div class="parent-box">
+                <!-- about -->
+                    <div class="dropdown">
+                    <a class="dropbtn" href="about.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">About</a>
+                    </div>
+                    <br>
+                <!-- blog -->
+                    <div class="dropdown">
+                    <a class="dropbtn" href="blog.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">Blog</a>
+                    </div>
+                    <br>
+                <!-- current work -->          
+                    <div class="dropdown" >
+                    <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black" >Current Work</button></a>
+                        <div class="dropdown-content" id="first">
+                          <a href="painting.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">Painting</a>
+                          <a href="photography.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">Photography</a>
+                        </div>
+                    </div>
+           
+                <!-- projects -->     
+                    <div class="dropdown" >
+                    <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black" >Projects</button></a>
+                        <div class="dropdown-content" id="second">
+                            <a href="abstract.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                            Abstraction
+                            </a>
+                            <a href="bblues.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                            Balkan Blues
+                            </a>
+                            <a href="bluedream.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                            Blue Dream
+                            </a>
+                            <a href="casa.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                            Taste of Casablanca
+                            </a>
+                            <a href="africa.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                            Out of Africa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </nav>
         </div>
         <!-- content -->
         <div class="flex-1 p-10 px-auto">
  <div class="title"><h2 class="page-title">Taste of Casablanca</h2></div>
  <div class="gallery">
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/1.jpg" data-lightbox="mygallery">
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/1.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/1.jpg" alt="photograph" class="portrait"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/2.jpg" data-lightbox="mygallery">
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/2.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/2.jpg" alt="photograph" class="portrait"></a></div>
     </div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/3.jpg" data-lightbox="mygallery">
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/3.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/3.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/4.jpg" data-lightbox="mygallery">
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/4.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/4.jpg" alt="photograph" class="landscape"></a></div>
     </div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/5.jpg" data-lightbox="mygallery">
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/5.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/5.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/6.jpg" data-lightbox="mygallery">
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/6.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/6.jpg" alt="photograph" class="landscape"></a></div>
     </div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/7.jpg" data-lightbox="mygallery">
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/7.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/7.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/8.jpg" data-lightbox="mygallery">
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/8.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/8.jpg" alt="photograph" class="landscape"></a></div>
     </div>
 
     <div class="duo"> 
-    <div id="left1">
+    <div>
     <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/9.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/9.jpg" alt="photograph" class="portrait"></a></div>
-    <div id="right1">
+    <div>
     <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/10.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/10.jpg" alt="photograph" class="portrait"></a></div>
     </div>
 
     <div class="duo">
-    <div id="left1">
+    <div>
     <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/11.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/11.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1">
+    <div>
     <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/12.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/12.jpg" alt="photograph" class="landscape"></a></div>
     </div>
 
     <div class="duo">
-    <div id="left1">
+    <div>
     <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/13.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/13.jpg" alt="photograph" class="landscape"></a></div> 
-    <div id="right1">
+    <div>
     <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/14.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/14.jpg" alt="photograph" class="landscape"></a></div>
     </div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/15.jpg" data-lightbox="mygallery">
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/15.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/15.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/16.jpg" data-lightbox="mygallery">
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/16.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/16.jpg" alt="photograph" class="landscape"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1">
+    <div>
     <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/17.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/17.jpg" alt="photograph" class="portrait"></a></div>
-    <div id="right1">
+    <div>
     <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/18.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/18.jpg" alt="photograph" class="portrait"></a></div>
     </div>
 
     <div class="duo"> 
-    <div id="left1">
+    <div>
     <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/19.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/19.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1">
+    <div>
     <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/20.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/20.jpg" alt="photograph" class="landscape"></a></div>
     </div>
     
     <div class="duo"> 
-    <div id="left1">
+    <div>
     <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/21.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/21.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1">
+    <div>
     <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/22.jpg" data-lightbox="mygallery">   
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/22.jpg" alt="photograph" class="landscape"></a></div>
     </div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/23.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/23.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/23.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/24.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/24.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/24.jpg" alt="photograph" class="landscape"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/25.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/25.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/25.jpg" alt="photograph" class="portrait"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/26.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/26.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/26.jpg" alt="photograph" class="portrait"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/27.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/27.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/27.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/28.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/28.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/28.jpg" alt="photograph" class="landscape"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/29.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/29.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/29.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/30.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/30.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/30.jpg" alt="photograph" class="landscape"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/31.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/31.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/31.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/32.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/32.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/32.jpg" alt="photograph" class="landscape"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/33.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/33.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/33.jpg" alt="photograph" class="portrait"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/34.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/34.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/34.jpg" alt="photograph" class="portrait"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/35.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/35.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/35.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/36.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/36.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/36.jpg" alt="photograph" class="landscape"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/37.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/37.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/37.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/38.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/38.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/38.jpg" alt="photograph" class="landscape"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/39.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/39.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/39.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/40.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/40.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/40.jpg" alt="photograph" class="landscape"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/41.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/41.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/41.jpg" alt="photograph" class="portrait"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/42.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/42.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/42.jpg" alt="photograph" class="portrait"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/43.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/43.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/43.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/44.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/44.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/44.jpg" alt="photograph" class="landscape"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/45.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/45.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/45.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/46.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/46.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/46.jpg" alt="photograph" class="landscape"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/47.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/47.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/47.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/48.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/48.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/48.jpg" alt="photograph" class="landscape"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/49.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/49.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/49.jpg" alt="photograph" class="portrait"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/50.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/50.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/50.jpg" alt="photograph" class="portrait"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/51.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/51.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/51.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/52.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/52.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/52.jpg" alt="photograph" class="landscape"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/53.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/53.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/53.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/54.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/54.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/54.jpg" alt="photograph" class="landscape"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/55.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/55.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/55.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/56.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/56.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/56.jpg" alt="photograph" class="landscape"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/57.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/57.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/57.jpg" alt="photograph" class="portrait"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/58.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/58.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/58.jpg" alt="photograph" class="portrait"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/59.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/59.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/59.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/60.jpg" data-lightbox="mygallery">  
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/60.jpg" data-lightbox="mygallery">  
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/60.jpg" alt="photograph" class="landscape"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/61.jpg" data-lightbox="mygallery"> 
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/61.jpg" data-lightbox="mygallery"> 
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/61.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/62.jpg" data-lightbox="mygallery"> 
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/62.jpg" data-lightbox="mygallery"> 
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/62.jpg" alt="photograph" class="landscape"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/63.jpg" data-lightbox="mygallery"> 
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/63.jpg" data-lightbox="mygallery"> 
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/63.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/64.jpg" data-lightbox="mygallery"> 
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/64.jpg" data-lightbox="mygallery"> 
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/64.jpg" alt="photograph" class="landscape"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/65.jpg" data-lightbox="mygallery"> 
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/65.jpg" data-lightbox="mygallery"> 
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/65.jpg" alt="photograph" class="portrait"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/66.jpg" data-lightbox="mygallery"> 
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/66.jpg" data-lightbox="mygallery"> 
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/66.jpg" alt="photograph" class="portrait"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/67.jpg" data-lightbox="mygallery"> 
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/67.jpg" data-lightbox="mygallery"> 
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/67.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/68.jpg" data-lightbox="mygallery"> 
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/68.jpg" data-lightbox="mygallery"> 
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/68.jpg" alt="photograph" class="landscape"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/69.jpg" data-lightbox="mygallery"> 
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/69.jpg" data-lightbox="mygallery"> 
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/69.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/70.jpg" data-lightbox="mygallery"> 
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/70.jpg" data-lightbox="mygallery"> 
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/70.jpg" alt="photograph" class="landscape"></a></div></div>
 
     <div class="duo"> 
-    <div id="left1"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/71.jpg" data-lightbox="mygallery"> 
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/71.jpg" data-lightbox="mygallery"> 
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/71.jpg" alt="photograph" class="landscape"></a></div>
-    <div id="right1"> <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/72.jpg" data-lightbox="mygallery"> 
+    <div><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/72.jpg" data-lightbox="mygallery"> 
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Casablanca/72.jpg" alt="photograph" class="landscape"></a></div></div>
 </div>
 

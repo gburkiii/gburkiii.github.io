@@ -70,57 +70,75 @@
 <body>
     <div class="relative min-h-screen md:flex">
 
-        <!-- mobile menu bar -->
-        <div class="flex justify-between md:hidden top-0 bg-white w-13/14 mx-auto">
-            <!-- logo -->
-            <a href="index.html"><img class="logo" src="https://port888.s3.us-west-1.amazonaws.com/Assets/Title.png" alt="my logo" width="200"></a>
-            <!-- mobile menu button -->
-            <button class="mobile-menu-button p-4 focus:outline-none focus:colour-none">
-                <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-        </div>
+  <!-- mobile menu bar -->
+  <div class="flex justify-between md:hidden top-0 bg-white w-13/14 mx-auto">
+    <!-- logo -->
+    <div class="logo_div"><a href="index.html" class="flex items-center space-x-2 px-4">
+       <span class="text-2xl font-extrabold"><a class="georgia" href="index.html">Georgia Burki</a></span>
+   </a>
+</div>
+   <!-- mobile menu button -->
+   <button class="mobile-menu-button p-4 focus:outline-none focus:colour-none">
+       <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+           stroke="currentColor">
+           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+       </svg>
+   </button>
+</div>
 
-        <!-- sidebar -->
-        <div class="sidebar bg-white text-xl w-65 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
-
+       <!-- sidebar -->
+       <div class="sidebar bg-white text-xl w-60 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+        <!-- nav -->
+        <nav class="logo_div">
             <!-- logo -->
-            <a href="index.html" class="flex items-center space-x-2 px-4">
-                <span class="text-2xl font-extrabold"><a href="index.html"> <img class="logo" src="https://port888.s3.us-west-1.amazonaws.com/Assets/Title.png"
-                            alt="my logo"></a></span>
+            <div class="logo_div"><a href="index.html" class="flex items-center space-x-2 px-4">
+                <span><a class="georgia" href="index.html">Georgia Burki</a></span>
             </a>
-            <!-- nav -->
-            <nav>
-                <a href="abstract.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Abstract
-                </a>
-                <a href="bblues.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Balkan Blues
-                </a>
-                <a href="bluedream.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Blue Dream
-                </a>
-                <a href="colours.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Colours
-                </a>
-                <a href="ceramics.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Grounded
-                </a>
-                <a href="casa.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Taste of Casablanca
-                </a>
-                <a href="africa.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Out of Africa
-                </a>
-                <a href="about.html" class="text-sm block py-3 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    About
-                </a>
-                <a href="contact.html" class="text-sm block py-2 px-10 rounded transition duration-200 text-slate-400 hover:text-black">
-                    Contact
-                </a>
-            </nav>
+            </div>
+            
+                <div class="parent-box">
+                <!-- about -->
+                    <div class="dropdown">
+                    <a class="dropbtn" href="about.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">About</a>
+                    </div>
+                    <br>
+                <!-- blog -->
+                    <div class="dropdown">
+                    <a class="dropbtn" href="blog.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">Blog</a>
+                    </div>
+                    <br>
+                <!-- current work -->          
+                    <div class="dropdown" >
+                    <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black" >Current Work</button></a>
+                        <div class="dropdown-content" id="first">
+                          <a href="painting.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">Painting</a>
+                          <a href="photography.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">Photography</a>
+                        </div>
+                    </div>
+           
+                <!-- projects -->     
+                    <div class="dropdown" >
+                    <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black" >Projects</button></a>
+                        <div class="dropdown-content" id="second">
+                            <a href="abstract.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                            Abstraction
+                            </a>
+                            <a href="bblues.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                            Balkan Blues
+                            </a>
+                            <a href="bluedream.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                            Blue Dream
+                            </a>
+                            <a href="casa.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                            Taste of Casablanca
+                            </a>
+                            <a href="africa.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                            Out of Africa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </nav>
         </div>
         <!-- content -->
         <div class="flex-1 p-10 px-auto">
