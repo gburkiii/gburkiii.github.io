@@ -13,6 +13,59 @@
     <script src="https://cdn.tailwindcss.com"></script>
 <style>
 
+/* Dropdown Button */
+.dropbtn {
+    text-decoration: none;
+  font-family: "Avenir", sans-serif;
+  color: grey;
+  font-size: 90%;
+  display: inline-block;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding-left: 50px;
+  font-family: "Avenir", sans-serif;
+  color: black;
+  font-size: 80%;
+  text-align: left;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: grey;
+  text-decoration: none;
+  display: block;
+  min-width: 500px;
+}
+
+#first {
+margin-left: 70px;
+margin-top: -27px;
+}
+#second {
+margin-left: 26px;
+margin-top: -27.5px;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: black;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {color: black;}
 
 
 </style>
