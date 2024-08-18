@@ -1,17 +1,3 @@
-.logo {
-  top: 0px;
-  width: 245px;
-}
-
-.georgia {
-  font-weight: 600;
-  font-family: "Palatino";
-  color: black;
-  text-align: left;
-  font-size: 100%;
-  text-decoration: none;
-}
-
 .title {
   font-weight: 700;
   font-family: "Palatino";
@@ -36,22 +22,11 @@
   margin-top: -27.5px;
   }
 
-  .logo_div {
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-bottom: 6%;
-    display: inline;
-  }
-
-.title {
-  font-weight: 700;
-  font-family: "Palatino";
-  color: white;
-  text-align: right;
-  font-size: 130%;
-  text-decoration: none;
-  padding-top: 74px;
-  padding-right: 40px;
+.logo_div {
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-bottom: 6%;
+  display: inline;
 }
 
 .parent-box {
@@ -73,7 +48,6 @@
     padding-top: 64px;
   }
 }
-
 
 nav {
 position: relative;
@@ -119,9 +93,6 @@ nav > a:hover {
 .about > a:hover {
   color: black;
 }
-
-
-
 
 .credits {
   text-align: right;
@@ -186,20 +157,7 @@ p {
 #left1 {
   max-width: 50%;
 }
-.logo_div {
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-bottom: 6%;
-}
 
-nav {
-    font-weight: 300;
-}
-
-.logo {
-  top: 0px;
-  width: 245px;
-}
 
 
 /* Dropdown Button */
@@ -239,14 +197,6 @@ nav {
   min-width: 500px;
 }
 
-#first {
-margin-left: 70px;
-margin-top: -27px;
-}
-#second {
-margin-left: 26px;
-margin-top: -27.5px;
-}
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {color: black;}
 
