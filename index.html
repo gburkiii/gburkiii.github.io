@@ -11,43 +11,6 @@
         <meta name="description" content="Multimedia portfolio of Georgia Helena Burki's creative work." />     
         <script src="https://cdn.tailwindcss.com"></script>
 <style>
-.logo_div {
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-bottom: 6%;
-    display: inline;
-}
-
-#title {
-  font-weight: 700;
-  font-family: "Palatino";
-  color: white;
-  text-align: right;
-  font-size: 130%;
-  text-decoration: none;
-  padding-top: 74px;
-  padding-right: 40px;
-}
-
-.parent-box {
-    text-align: right;
-    width: 175px;
-}
-
-#first {
-margin-left: 70px;
-margin-top: -27px;
-}
-
-#second {
-margin-left: 26px;
-margin-top: -27.5px;
-}
-
-#third {
-margin-left: 18px;
-margin-top: -27.5px;
-}
 
 .photo{
     margin-top: 2%;
@@ -74,9 +37,9 @@ margin-top: -27.5px;
         margin-left: 100px;
     }
     #sveti{
-        width: 200px;
-        margin-top: -500px;
-        margin-left: 490px;
+        width: 250px;
+        margin-top: -530px;
+        margin-left: 450px;
 }
     #abstract {
         width: 250px;
@@ -97,25 +60,16 @@ margin-top: -27.5px;
     }
 
     #painting{
-        width: 200px;
-        margin-left: 750px;
-        margin-top: -600px;
+        width: 180px;
+        margin-left: 970px;
+        margin-top: -570px;
     }
 
     #priroda{
-        width: 170px;
-        margin-left: 980px;
-        margin-top: -255px;
+        width: 200px;
+        margin-left: 750px;
+        margin-top: -300px;
     }
-    
-    .georgia {
-  font-weight: 700;
-  font-family: "Palatino";
-  color: black;
-  text-align: left;
-  font-size: 100%;
-  text-decoration: none;
-}
 }
 
 /* change this for mobile view */
@@ -150,8 +104,6 @@ margin-top: -27.5px;
      text-decoration: none;
    }
    }
-
-
 
 /* Dropdown Button */
 .dropbtn {
@@ -212,7 +164,7 @@ margin-top: -27.5px;
                 <span class="text-2xl font-extrabold"><a class="georgia" href="index.html">Georgia Helena Burki</a></span>
             </a>
             </div>
-            <h2 id="title">Home</h2>
+            <h2 class="title">Home</h2>
             <!-- mobile menu button -->
             <button class="mobile-menu-button p-4 focus:outline-none focus:colour-none">
                 <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -246,21 +198,16 @@ margin-top: -27.5px;
                 <!-- current work -->          
                     <div class="dropdown" >
                     <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black" >Current Work</button></a>
-                        <div class="dropdown-content" id="first">
+                        <div class="dropdown-content" class="first">
                           <a href="painting.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">Painting</a>
                           <a href="photography.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">Photography</a>
                         </div><!--closes dropdown-content-->
                     </div><!--closes dropdown-->
                     <br>
-                <!-- manifesto -->
-                    <div class="dropdown">
-                    <a class="dropbtn" href="manifesto.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">Manifesto</a>
-                    </div>
-                    <br>
                 <!-- projects -->     
                     <div class="dropdown" >
                     <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black" >Projects</button></a>
-                        <div class="dropdown-content" id="second">
+                        <div class="dropdown-content" class="second">
                             <a href="abstract.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
                             Abstraction
                             </a>
@@ -282,7 +229,7 @@ margin-top: -27.5px;
                 <!-- shows -->          
                 <div class="dropdown" >
                     <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">Shows</button></a>
-                        <div class="dropdown-content" id="third">
+                        <div class="dropdown-content" class="third">
                           <a href="priroda.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black"><i>PRIRODA</i></a>
                           <a href="biennale.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black"><i>Whispers From The Corner of My Eye</i></a>
                         </div><!--closes dropdown-content-->

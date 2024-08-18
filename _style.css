@@ -21,6 +21,44 @@
   text-decoration: none;
 }
 
+.first {
+  margin-left: 70px;
+  margin-top: -27px;
+  }
+  
+.second {
+  margin-left: 26px;
+  margin-top: -27.5px;
+  }
+  
+.third {
+  margin-left: 18px;
+  margin-top: -27.5px;
+  }
+
+  .logo_div {
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 6%;
+    display: inline;
+  }
+
+.title {
+  font-weight: 700;
+  font-family: "Palatino";
+  color: white;
+  text-align: right;
+  font-size: 130%;
+  text-decoration: none;
+  padding-top: 74px;
+  padding-right: 40px;
+}
+
+.parent-box {
+  text-align: right;
+  width: 175px;
+}
+
 .parent-box {
   display: inline-block;
   align-items: center;

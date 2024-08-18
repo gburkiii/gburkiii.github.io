@@ -22,51 +22,10 @@ align-content: right;
 justify-content: right; 
 }
 
-#biography {
-  max-width: 1500px;
-  display: block;
-  align-content: left;
-  justify-content: left;
-  font-family: "Avenir", sans-serif;
-  font-size: 3;
-  padding-top: 6%;
-  padding-left: 3%;
-  padding-right: 3%;
-}
-
 p{
   text-align: left;
-}
-
-.logo_div {
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-bottom: 6%;
-}
-.parent-box {
-    text-align: right;
-    width: 175px;
-}
-
-.title {
-  font-weight: 700;
-  font-family: "Palatino";
-  color: black;
-  font-size: 130%;
-  text-decoration: none;
-}
-
-nav {
-    font-weight: 300;
-}
-
-.georgia {
-  font-weight: 700;
-  font-family: "Palatino";
-  color: black;
-  text-align: left;
-  font-size: 130%;
-  text-decoration: none;
+  padding-top: 7%;
+  align-content: left;
 }
 
 #main{
@@ -83,9 +42,9 @@ nav {
   font-size: 130%;
   text-decoration: none;
 }
-  #biography {
-    padding-top: 15%;
-  }
+ p {
+  padding-left: 6%;
+ }
 }
 /* change this for mobile view */
   @media screen and (max-width: 1000px) {
@@ -140,18 +99,6 @@ nav {
   min-width: 500px;
 }
 
-#first {
-margin-left: 70px;
-margin-top: -27px;
-}
-#second {
-margin-left: -26px;
-margin-top: -27.5px;
-}
-#third {
-margin-left: -26px;
-margin-top: -27.5px;
-}
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {color: black;}
 
@@ -184,75 +131,71 @@ margin-top: -27.5px;
    </button>
 </div>
 
-       <!-- sidebar -->
-       <div class="sidebar bg-white text-xl w-60 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
-        <!-- nav -->
-        <nav class="logo_div">
-            <!-- logo -->
-            <div class="logo_div"><a href="index.html" class="flex items-center space-x-2 px-4">
-                <span><a class="georgia" href="index.html">Georgia Helena Burki</a></span>
-            </a>
-            </div>
-            
-                <div class="parent-box">
-                <!-- about -->
-                    <div class="dropdown">
-                    <a class="dropbtn" href="about.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">About</a>
-                    </div>
-                    <br>
-                <!-- blog -->
-                    <div class="dropdown">
-                    <a class="dropbtn" href="blog.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">Blog</a>
-                    </div>
-                    <br>
-                <!-- current work -->          
-                    <div class="dropdown" >
-                    <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black" >Current Work</button></a>
-                        <div class="dropdown-content" id="first">
-                          <a href="painting.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">Painting</a>
-                          <a href="photography.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">Photography</a>
-                        </div>
-                    </div>
-                    <br>
-                <!-- manifesto -->
-                    <div class="dropdown">
-                    <a class="dropbtn" href="manifesto.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">Manifesto</a>
-                    </div>
-                    <br>
-                <!-- projects -->     
-                    <div class="dropdown" >
-                    <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black" >Projects</button></a>
-                        <div class="dropdown-content" id="second">
-                            <a href="abstract.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
-                            Abstraction
-                            </a>
-                            <a href="bblues.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
-                            Balkan Blues
-                            </a>
-                            <a href="bluedream.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
-                            Blue Dream
-                            </a>
-                            <a href="casa.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
-                            Taste of Casablanca
-                            </a>
-                            <a href="africa.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
-                            Out of Africa
-                            </a>
-                        </div>
-                    </div>
-                    <br>
-                <!-- shows -->          
-                <div class="dropdown" >
-                    <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black" >Shows</button></a>
-                        <div class="dropdown-content" id="third">
-                          <a href="priroda.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black"><i>PRIRODA</i></a>
-                          <a href="biennale.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black"><i>Whispers From The Corner of My Eye</i></a>
-                        </div>
-                    </div>
-
-                </div>
-                </nav>
-        </div>
+        <!-- sidebar -->
+        <div class="sidebar bg-white text-xl w-80 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+          <!-- nav -->
+          <nav class="logo_div">
+              <!-- logo -->
+              <div class="logo_div"><a href="index.html" class="flex items-center space-x-2 px-4">
+                  <span><a class="georgia" href="index.html">Georgia Helena Burki</a></span>
+              </a>
+              </div><!--closes logo_div-->
+              
+                  <div class="parent-box">
+                  <!-- about -->
+                      <div class="dropdown">
+                      <a class="dropbtn" href="about.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">About</a>
+                      </div>
+                      <br>
+                  <!-- blog -->
+                      <div class="dropdown">
+                      <a class="dropbtn" href="blog.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">Blog</a>
+                      </div>
+                      <br>
+                  <!-- current work -->          
+                      <div class="dropdown" >
+                      <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black" >Current Work</button></a>
+                          <div class="dropdown-content" id="first">
+                            <a href="painting.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">Painting</a>
+                            <a href="photography.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">Photography</a>
+                          </div><!--closes dropdown-content-->
+                      </div><!--closes dropdown-->
+                      <br>
+                  <!-- projects -->     
+                      <div class="dropdown" >
+                      <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black" >Projects</button></a>
+                          <div class="dropdown-content" id="second">
+                              <a href="abstract.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                              Abstraction
+                              </a>
+                              <a href="bblues.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                              Balkan Blues
+                              </a>
+                              <a href="bluedream.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                              Blue Dream
+                              </a>
+                              <a href="casa.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                              Taste of Casablanca
+                              </a>
+                              <a href="africa.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                              Out of Africa
+                              </a>
+                          </div><!--closes dropdown-content-->
+                      </div><!--closes dropdown-->
+                      <br>
+                  <!-- shows -->          
+                  <div class="dropdown" >
+                      <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">Shows</button></a>
+                          <div class="dropdown-content" id="third">
+                            <a href="priroda.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black"><i>PRIRODA</i></a>
+                            <a href="biennale.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black"><i>Whispers From The Corner of My Eye</i></a>
+                          </div><!--closes dropdown-content-->
+                  </div><!--closes dropdown-->
+                  </div><!--closes parent box-->
+                 
+          </nav><!--closes nav-->
+          </div><!--closes sidebar-->
+          
 <!-- content -->
 <div class="flex-1 p-10 px-auto">
 <div id="main">
@@ -261,7 +204,7 @@ margin-top: -27.5px;
 <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/About/IMG_9418.jpg" alt="me">
 </div>
 
-  <div id="biography">
+  
     <p>
     Georgia Helena Burki (b. 2001, Geneva, Switzerland)<br>
     <br>
@@ -272,9 +215,10 @@ margin-top: -27.5px;
     Email: burkigeorgia@gmail.com<br>
     Instagram: <a target="_blank" href="https://www.instagram.com/at___ease_/"><span style="color:rgb(73, 73, 255)"><i>@at___ease_</i></span></a><br>
     Youtube: <a target="_blank" href="https://www.youtube.com/@georgiahburki"><span style="color:rgb(73, 73, 255)"><i>@georgiahburki</i></span></a><br><br>
-    Currently showing at the 60th International Venice Biennale of Art in Venice, Italy. <br>For more information, click <span style="color:rgb(73, 73, 255)"><a href="biennale.html">here</a></span>.
+    If you would like to read more, access my manifesto <a target="_blank" href="manifesto.html"><span style="color:rgb(34, 180, 34)"><i></i>here.</i></span></a><br><br>
+    Currently showing at the 60th International Venice Biennale of Art in Venice, Italy. <br>For more information, click <span style="color:rgb(214, 67, 214)"><a href="biennale.html">here</a></span>.
 </p>
-</div>
+
 
 </div>
 <div class="footer text-sm text-slate-400 mx-auto text-center mt-10">Georgia Helena Burki © All Rights Reserved</div>
