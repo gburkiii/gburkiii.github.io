@@ -6,7 +6,7 @@
         <meta name="robots" content="index,follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="/app/css/_style.css" />
+        <link rel="stylesheet" href="/_style.css" />
         <meta name="keywords" content="art, photography, ceramics, graffiti, creativity, travel"  />
         <meta name="description" content="Multimedia portfolio of Georgia Helena Burki's creative work." />     
         <script src="https://cdn.tailwindcss.com"></script>
@@ -15,6 +15,7 @@
 .photo{
     margin-top: 2%;
 }
+
 /* change this for desktop view */
 @media screen and (min-width: 760px) {
 
@@ -152,7 +153,7 @@
                 <!-- current work -->          
                     <div class="dropdown" >
                     <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black" >Current Work</button></a>
-                        <div class="dropdown-content" class="first">
+                        <div id="first" class="dropdown-content">
                           <a href="painting.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">Painting</a>
                           <a href="photography.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">Photography</a>
                         </div><!--closes dropdown-content-->
@@ -161,7 +162,7 @@
                 <!-- projects -->     
                     <div class="dropdown" >
                     <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black" >Projects</button></a>
-                        <div class="dropdown-content" class="second">
+                        <div id="second" class="dropdown-content">
                             <a href="abstract.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
                             Abstraction
                             </a>
@@ -183,7 +184,7 @@
                 <!-- shows -->          
                 <div class="dropdown" >
                     <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">Shows</button></a>
-                        <div class="dropdown-content" class="third">
+                        <div id="third" class="dropdown-content">
                           <a href="priroda.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black"><i>PRIRODA</i></a>
                           <a href="biennale.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black"><i>Whispers From The Corner of My Eye</i></a>
                         </div><!--closes dropdown-content-->

@@ -1,25 +1,25 @@
-.title {
-  font-weight: 700;
+.georgia{
   font-family: "Palatino";
+  font-weight: 600;
   color: black;
-
-  font-size: 130%;
-  text-decoration: none;
+  font-size: 100%;
+  margin-bottom: 4%;
+  display: inline-block;
 }
 
-.first {
+#first {
   margin-left: 70px;
   margin-top: -27px;
   }
   
-.second {
+#second {
   margin-left: 26px;
-  margin-top: -27.5px;
+  margin-top: -28px;
   }
   
-.third {
-  margin-left: 18px;
-  margin-top: -27.5px;
+#third {
+  margin-left: 10px;
+  margin-top: -28px;
   }
 
 .logo_div {
@@ -107,6 +107,7 @@ p {
   padding-top: 1%;
 }
 
+
 .duo {
   display: flex;
 
@@ -162,7 +163,7 @@ p {
 
 /* Dropdown Button */
 .dropbtn {
-    text-decoration: none;
+  text-decoration: none;
   font-family: "Avenir", sans-serif;
   color: grey;
   font-size: 90%;
