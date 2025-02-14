@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Georgia Helena Burki Home</title>
+        <meta name="robots" content="home,follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" type="text/css" href="/app/css/_style.css" />
+        <link rel="stylesheet" type="text/css" href="/lightbox/css/lightbox.min.css" />
+        <meta name="keywords" content="art, photography, ceramics, graffiti, creativity, travel"  />
+        <meta name="description" content="Multimedia portfolio of Georgia Helena Burki's creative work." />     
+        <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+#h2 {
+  text-align: center;
+  font-family: "Palatino";
+  padding-top: 1%;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+#h3 {
+  text-align: center;
+  font-family: "Palatino";
+  padding-top: 1%;
+}
+p{
+  text-align: left;
+  font-family: "Palatino";
+  padding-top: 2%;
+}
+
+.image {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    align-content: center;
+    justify-content: center;
+}
+
+.photos{
+  max-width: 500px;
+  margin: auto;
+  padding-top: 1%;
+  align-content: right;
+  justify-content: right; 
+}
+
+#main{
+  display: flex;
+}
+
+/* change this for desktop view */
+@media screen and (min-width: 760px) {
+  .georgia {
+  font-weight: 700;
+  font-family: "Palatino";
+  color: black;
+  text-align: left;
+  font-size: 130%;
+  text-decoration: none;
+}
+  #biography {
+    padding-top: 15%;
+  }
+}
+/* change this for mobile view */
+  @media screen and (max-width: 1000px) {
+    #main {
+      display: inline;
+    }
+    .georgia {
+     font-weight: 700;
+     font-family: "Palatino";
+     color: black;
+     text-align: left;
+     font-size: 130%;
+     text-decoration: none;
+   }
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    text-decoration: none;
+  font-family: "Avenir", sans-serif;
+  color: grey;
+  font-size: 90%;
+  display: inline-block;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding-left: 50px;
+  font-family: "Avenir", sans-serif;
+  color: black;
+  font-size: 80%;
+  text-align: left;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: grey;
+  text-decoration: none;
+  display: block;
+  min-width: 500px;
+}
+
+#first {
+margin-left: 70px;
+margin-top: -27px;
+}
+#second {
+margin-left: 26px;
+margin-top: -27.5px;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: black;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {color: black;}
+
+</style>
+</head>
+
+<body>
+
+  <div class="relative min-h-screen md:flex">
+
+  <!-- mobile menu bar -->
+  <div class="flex justify-between md:hidden top-0 bg-white w-13/14 mx-auto">
+    <!-- logo -->
+    <div class="logo_div"><a href="index.html" class="flex items-center space-x-2 px-4">
+       <span class="text-2xl font-extrabold"><a class="georgia" href="index.html">Georgia Helena Burki</a></span>
+   </a>
+</div>
+   <!-- mobile menu button -->
+   <button class="mobile-menu-button p-4 focus:outline-none focus:colour-none">
+       <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+           stroke="currentColor">
+           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+       </svg>
+   </button>
+</div>
+<!-- sidebar -->
+<div class="sidebar bg-white text-xl w-80 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+  <!-- nav -->
+  <nav class="logo_div">
+      <!-- logo -->
+      <div class="logo_div"><a href="index.html" class="flex items-center space-x-2 px-4">
+          <span><a class="georgia" href="index.html">Georgia Helena Burki</a></span>
+      </a>
+      </div><!--closes logo_div-->
+      
+          <div class="parent-box">
+          <!-- about -->
+              <div class="dropdown">
+              <a class="dropbtn" href="about.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">About</a>
+              </div>
+              <br>
+          <!-- blog -->
+              <div class="dropdown">
+              <a class="dropbtn" href="blog.html" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">Blog</a>
+              </div>
+              <br>
+          <!-- current work -->          
+              <div class="dropdown" >
+              <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black" >Current Work</button></a>
+                  <div id="first" class="dropdown-content">
+                    <a href="painting.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">Painting</a>
+                    <a href="photography.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">Photography</a>
+                  </div><!--closes dropdown-content-->
+              </div><!--closes dropdown-->
+              <br>
+          <!-- projects -->     
+              <div class="dropdown" >
+              <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black" >Projects</button></a>
+                  <div id="second" class="dropdown-content">
+                      <a href="abstract.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                      Abstraction
+                      </a>
+                      <a href="bblues.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                      Balkan Blues
+                      </a>
+                      <a href="bluedream.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                      Blue Dream
+                      </a>
+                      <a href="casa.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                      Taste of Casablanca
+                      </a>
+                      <a href="africa.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black">
+                      Out of Africa
+                      </a>
+                  </div><!--closes dropdown-content-->
+              </div><!--closes dropdown-->
+              <br>
+          <!-- shows -->          
+          <div class="dropdown" >
+              <a class="block rounded transition duration-200 text-slate-400 hover:text-black"><button class="dropbtn" class="block py-4 px-10 rounded transition duration-200 text-slate-400 hover:text-black">Shows</button></a>
+                  <div id="third" class="dropdown-content">
+                    <a href="priroda.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black"><i>PRIRODA</i></a>
+                    <a href="biennale.html" class="flex items-center" class="block rounded transition duration-200 text-slate-400 hover:text-black"><i>Whispers From The Corner of My Eye</i></a>
+                  </div><!--closes dropdown-content-->
+          </div><!--closes dropdown-->
+          </div><!--closes parent box-->
+         
+  </nav><!--closes nav-->
+  </div><!--closes sidebar-->
+  <!-- content -->
+<div class="flex-1 p-10 px-auto">
+
+    <div id="h2">Other Streams</h2></div>
+    <div id="h3">A USC Roski Group Show at the Helen Topping Fine Arts and Architecture Library</h3></div>
+
+    <p>
+    ABOUT THE EXHIBITION:
+    <br>
+    Other Streams is a group exhibition utilizing artwork as research in collaboration with the Architecture + Fine Arts Library. 
+    <br> 
+    Navigating the fluidity of creative cycles and the waters of the conscious and unconscious, we aim to resurrect the library as a space of play and searching. Treating the library as a labyrinth, a cave, and an underground repository of knowledge, we map our internal paths to nourish and inform our external derives. Through our tapestry of works we drift through ways of making outside our known processes.  
+    <br>
+    Exhibition on view: Nov. 20 - Dec. 10, 2024
+    <br>
+    EXHIBITING ARTISTS:<br>
+    Leyla Akgedik<br>
+    Georgia Helena Burki<br>
+    Danielle Garza<br>
+    Daniella León<br>
+    Alaric Ma<br>
+    Calvin Miceli-Nelson<br>
+    Ale Moreno<br>
+    Marina Stamato<br>
+    <br>
+    </p>
