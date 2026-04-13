@@ -13,42 +13,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
 <style>
 
-.gallery {
-    max-width: 1000px;
-    margin: auto;   
-    margin-top: 8%;    
-    margin-bottom: 8%;   
-    align-content: center; 
-    justify-content: center;
-}
-
-.portrait {
-    max-width: 220px;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-bottom: 1%;
-    object-fit: contain;
-    max-width: 100%;
-}
-
-.landscape {
-    max-width: 350px;
-    padding-right: 3%;
-    padding-left: 3%;
-    padding-bottom: 1%;
-    object-fit: contain;
-    max-width: 100%;
-}
-
-.duo {
-  display: flex;
-  max-width: 1000px;
-  margin: auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  align-content: center;
-  justify-content: center;
-}
 
 .logo_div {
     margin-top: 2%;
@@ -73,67 +37,15 @@ nav {
     font-weight: 300;
 }
 
-.georgia {
-  font-weight: 700;
-  font-family: "Palatino";
-  color: black;
-  text-align: left;
-  font-size: 130%;
-  text-decoration: none;
+].mySlides {
+  margin-left: auto;
+  margin-right: auto;
+  display: none;             /* image itself should be block */
 }
 
-
-#text {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-right: auto;
-    align-content: center;
-    justify-content: center;
-    font-family: "Palatino";
-}
-
-#poem {
-    padding-left: 40px;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-right: auto;
-    align-content: center;
-    justify-content: center;
-    font-family: "Palatino";
-}
-
-#vlad {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-right: auto;
-    align-content: right;
-    justify-content: right;
-    font-family: "Palatino";
-    text-align: right;
-}
-
-h5{
-    margin-left: 300px;
-    font-weight: 550;
-    margin-top: 70px;
-}
-
-#jesus {
-    max-width: 500px;
-    margin: auto;   
-    margin-bottom: 4%;
-    align-content: center;
-    justify-content: center;  
-}
 
 p {
-    text-align: center;
+    text-align: left;
     font-family: "Palatino";
     padding-top: 3%;
     }
@@ -147,14 +59,6 @@ p {
 }
 /* change this for desktop view */
 @media screen and (min-width: 760px) {
-  .georgia {
-  font-weight: 700;
-  font-family: "Palatino";
-  color: black;
-  text-align: left;
-  font-size: 130%;
-  text-decoration: none;
-}
 }
 
 #first {
@@ -177,7 +81,6 @@ margin-top: -27.5px;
 </style>
 </head>      
 
-
 <body>
    
     <div class="relative min-h-screen md:flex">
@@ -186,14 +89,13 @@ margin-top: -27.5px;
         <div class="flex justify-between md:hidden top-0 bg-white w-13/14 mx-auto">
           <!-- logo -->
           <div class="logo_div"><a href="index.html" class="flex items-center space-x-2 px-4">
-             <span class="text-2xl font-extrabold"><a class="georgia" href="index.html">Georgia Helena Burki</a></span>
-         </a>
+             <span class="text-2xl font-extrabold"></span></a><a class="georgia" href="index.html">Georgia Helena Burki</a>
+         
       </div>
          <!-- mobile menu button -->
          <button class="mobile-menu-button p-4 focus:outline-none focus:colour-none">
-             <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                 stroke="currentColor">
-                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+             <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
              </svg>
          </button>
       </div>
@@ -204,8 +106,8 @@ margin-top: -27.5px;
         <nav class="logo_div">
             <!-- logo -->
             <div class="logo_div"><a href="index.html" class="flex items-center space-x-2 px-4">
-                <span><a class="georgia" href="index.html">Georgia Helena Burki</a></span>
-            </a>
+                <span></span></a><a class="georgia" href="index.html">Georgia Helena Burki</a>
+            
             </div><!--closes logo_div-->
             
                 <div class="parent-box">
@@ -223,16 +125,11 @@ margin-top: -27.5px;
                     <br>
                 <!-- photography -->  
                  <div class="dropdown">
-                        <button
-                        type="button"
-                        class="dropbtn"
-                        aria-expanded="false"
-                        aria-controls="menu-photography"
-                        >
+                        <button type="button" class="dropbtn" aria-expanded="false" aria-controls="menu-photography">
                         Photography
                     </button>
 
-                    <div id="menu-photography" class="dropdown-content" hidden>
+                    <div id="menu-photography" class="dropdown-content" hidden="">
                             <a href="bblues.html">Balkan Blues</a>
                             <a href="bluedream.html">Blue Dream</a>
                             <a href="photography.html">Miscellaneous</a>
@@ -242,17 +139,12 @@ margin-top: -27.5px;
                         </div><!--closes dropdown-content-->
                     </div><!--closes dropdown-->
                 <!-- shows -->          
-                <div class="dropdown" >
-                    <button
-                        type="button"
-                        class="dropbtn"
-                        aria-expanded="false"
-                        aria-controls="menu-photography"
-                        >
+                <div class="dropdown">
+                    <button type="button" class="dropbtn" aria-expanded="false" aria-controls="menu-photography">
                         Shows
                     </button>
 
-                    <div id="menu-shows" class="dropdown-content" hidden>
+                    <div id="menu-shows" class="dropdown-content" hidden="">
                           <a href="thesis.html"><i>always to be found</i></a>
                           <a href="streams.html"><i>Other Streams</i></a>
                           <a href="priroda.html"><i>PRIRODA</i></a>
@@ -266,29 +158,8 @@ margin-top: -27.5px;
 
     <!-- content -->
     <div class="flex-1 p-10 px-auto">
-<div id="jesus"><a href="https://port888.s3.us-west-1.amazonaws.com/Assets/BalkanBlues/What if Jesus was a Woman copy.jpg" data-lightbox="mygallery"><img src="https://port888.s3.us-west-1.amazonaws.com/Assets/BalkanBlues/What if Jesus was a Woman copy.jpg" alt="What if Jesus was a Woman?"></a>
-    <p><i>What if Jesus was a Woman/Christ Consciousness</i>, watercolour triptych, 127 x 61 cm, 2020</p></div>
-<div id="poem">
-    <p id="p">...that rare phenomenon<br>
-The iridule – when, beautiful and strange<br>
-In a bright sky above a mountain range<br>
-One opal cloudlet in an oval form<br>
-Reflects the rainbow of a thunderstorm<br>
-Which in a distant valley has been staged<br>
-For we are most artistically caged.<br><br></p>
-</div>
-<div id="vlad">Vladimir Nabokov in <i>Pale Fire</i>, 1962<br></div>
-<div id="text">
-<h5><i><br>Yagodina, Bulgaria</i></h5><br>
-As we know, the best ideas spur out of nowhere - this is exactly where my idea to capture Bulgaria in its simplicity came from. It is the first one of my photography projects where I seek to build a bridge across generations and cultures and convey personal scenes that still remain universal. As Paulo Coelho said, it is part of the human condition to want to share things—thoughts, ideas, opinions. Although at first I simply shot scenes that caught my attention, my goal eventually crystallised; I wanted to enable any viewer to feel immersed in my photographs. Like a time machine, I yearned to make the viewer to feel at home in these ancestral scenes.
-    <br><br>
-    The painting is based in my village, Jagodina, close to the Greek border and south of Bulgaria. The woman with self-generating energy represents universal enlightenment and nature, emitting its beautiful array of colours. It is an adaptation of William Blake’s 1796 piece <i>'</i>'Glad Day Or The Dance Of Albion'</i>. She seems to be a figment of imagination, yet for me, she is largely a state of mind which is wholly attainable. She is not fictious but a self-portrait. More pertinently, she represents something larger than myself: the powerful creative force.
-<br><br>
-The title is not so much an association to Christianity but its birth, Jesus, and evidently gender. Through this question, I wonder if Self would have been liberated, or at best, averted from thousands of years of patriarchal religious oppression. Exploring the roots of social and cultural power found in Western Judio-Christian-Islamic religion and its symbols, ideas and male-oriented language that essentially oppress women. I want to challenge the stereotypical boundaries imposed by God-language.
-<br><br>
-Mary Beth Edelson, in her ‘Woman Rising’ series, perceives goddess imagery as a metaphor for “radical change and change of consciousness…while opening other realms of experience”. Challenging the status-quo is a “profoundly political act against the patriarchy and for spiritual liberation—the ramifications of which are still unfolding.” <b>What is this power we have within and where is it? According to Jung, man is not created in God’s image, but rather we are all Gods and Goddesses... for self is truly divine.</b>
-</div>
-<p id="second"><br><i>Summer 2018</i></p><br><br>
+
+<p id="second"><br>This series was taken in the summer of 2018 in my ancestral village in Southern Bulgaria.</p>
 <div class="gallery">
     <div class="duo"> 
     <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/BalkanBlues/1.jpg" data-lightbox="mygallery">
@@ -310,9 +181,9 @@ Mary Beth Edelson, in her ‘Woman Rising’ series, perceives goddess imagery
 </div>  
     <div class="duo"> 
     <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/BalkanBlues/7.jpg" data-lightbox="mygallery">
-    <img  src="https://port888.s3.us-west-1.amazonaws.com/Assets/BalkanBlues/7.jpg" alt="photograph" class="portrait"></a>
+    <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/BalkanBlues/7.jpg" alt="photograph" class="portrait"></a>
     <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/BalkanBlues/8.jpg" data-lightbox="mygallery">
-    <img  src="https://port888.s3.us-west-1.amazonaws.com/Assets/BalkanBlues/8.jpg" alt="photograph" class="portrait"></a>
+    <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/BalkanBlues/8.jpg" alt="photograph" class="portrait"></a>
 </div>  
     <div class="duo"> 
     <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/BalkanBlues/9.jpg" data-lightbox="mygallery">

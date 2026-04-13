@@ -1,14 +1,7 @@
-.logo {
-  top: 0px;
-  width: 300px;
-}
-
 .georgia {
-  font-weight: 700;
-  font-family: "Palatino";
+  font-weight: 300;
   color: black;
-  text-align: left;
-  font-size: 130%;
+  font-size: 92%;
   text-decoration: none;
 }
 
@@ -16,7 +9,6 @@
   font-weight: 700;
   font-family: "Palatino";
   color: black;
-
   font-size: 130%;
   text-decoration: none;
 }
@@ -28,8 +20,6 @@
   text-align: right;
   width: 175px;
 }
-
-
 
 /* Dropdown Button */
 .dropbtn {
@@ -147,9 +137,6 @@ nav > a:hover {
   color: black;
 }
 
-
-
-
 .credits {
   text-align: right;
   color: grey;
@@ -213,17 +200,7 @@ p {
 #left1 {
   max-width: 50%;
 }
-.logo_div {
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-bottom: 6%;
-}
 
 nav {
     font-weight: 300;
-}
-
-.logo {
-  top: 0px;
-  width: 245px;
 }
