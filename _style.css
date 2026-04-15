@@ -6,6 +6,14 @@
   display: inline-block;
 }
 
+.title {
+  font-weight: 700;
+  font-family: "Palatino";
+  color: black;
+  font-size: 130%;
+  text-decoration: none;
+}
+
 #first {
   margin-left: 70px;
   margin-top: -27px;
@@ -52,6 +60,7 @@ nav {
 position: relative;
 display: inline-block;
 justify-content: space-between;
+font-weight: 300;
 }
 
 nav > a:hover,
@@ -182,11 +191,18 @@ p {
   display: none;
   position: absolute;
   z-index: 1;
-  padding-left: 50px;
   font-family: "Avenir", sans-serif;
   color: black;
   font-size: 80%;
   text-align: left;
+}
+
+#menu-photography {
+  padding-left: 120px;
+}
+
+#menu-shows {
+  padding-left: 67px;
 }
 
 /* Links inside the dropdown */

@@ -6,7 +6,7 @@
         <meta name="robots" content="home,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="/app/css/_style.css">
+        <link rel="stylesheet" type="text/css" href="/gburkiii.github.io/_style.css" />
         <link rel="stylesheet" type="text/css" href="/lightbox/css/lightbox.min.css">
         <meta name="keywords" content="art, photography, ceramics, graffiti, creativity, travel">
         <meta name="description" content="Multimedia portfolio of Georgia Helena Burki's creative work.">     
@@ -17,36 +17,23 @@
 max-width: 400px;
 margin: auto;
 margin-top: 6%;
-padding-bottom: 2%;
 padding-left: 3%;
-align-content: right;
-justify-content: right; 
+align-content: center;
+justify-content: center; 
+}
+
+#bio {
+max-width: 900px;
 }
 
 p{
+  max-width: 900px;
   text-align: left;
-  padding-top: 7%;
   align-content: left;
 }
 
 #main{
   display: flex;
-}
-
-/* change this for desktop view */
-@media screen and (min-width: 760px) {
- 
-}
- p {
-  padding-left: 6%;
- }
-}
-/* change this for mobile view */
-  @media screen and (max-width: 1000px) {
-    #main {
-      display: inline;
-    }
-
 }
 
 
@@ -109,7 +96,8 @@ p{
                             <a href="africa.html">Out of Africa</a>
                         </div><!--closes dropdown-content-->
                     </div><!--closes dropdown-->
-                <!-- shows -->          
+                    <br>
+                <!-- shows -->                
                 <div class="dropdown">
                     <button type="button" class="dropbtn" aria-expanded="false" aria-controls="menu-photography">
                         Shows
@@ -131,13 +119,14 @@ p{
 <div class="flex-1 p-10 px-auto">
 <div id="main">
 
-    <div id="portrait">
+    <div id="bio">
 <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/About/bulgaria-portrait.jpeg" data-lightbox="mygallery">
-    <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/About/bulgaria-portrait.jpeg" alt="self-portrait" data-lightbox="water"></a>
-    </div>
-  
+    <img id="portrait" src="https://port888.s3.us-west-1.amazonaws.com/Assets/About/bulgaria-portrait.jpeg" alt="self-portrait" data-lightbox="water"></a>
+   
+
+  <div>
     <p>
-    <b>Georgia Helena / Burki</b><br>
+    <br><b>Georgia Helena / Burki</b><br>
     At ease
     <br>
     <i>Based in London, UK</i><br><br>
@@ -150,8 +139,8 @@ p{
     To access my manifesto, click <a href="manifesto.html"><span style="color:rgb(34, 180, 34)"><i></i>here.</span></a><br>
     To view my CV, click <a href="cv.html"><span style="color:rgb(255, 0, 170)"><i></i>here.</span></a><br><br> 
 </p>
-
-
+</div>
+ </div>
 </div>
 <div class="footer text-sm text-slate-400 mx-auto text-center mt-10">Georgia Helena Burki © All Rights Reserved</div>
 </div>
