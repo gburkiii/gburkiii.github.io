@@ -6,26 +6,12 @@
     <meta name="robots" content="home,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="/gburkiii.github.io/_style.css" />
+    <link rel="stylesheet" type="text/css" href="/gburkiii.github.io/app/css/_style.css" />
     <link rel="stylesheet" type="text/css" href="/lightbox/css/lightbox.min.css">
     <meta name="keywords" content="art, photography, ceramics, graffiti, creativity, travel, bulgaria, jagodina">
     <meta name="description" content="Multimedia portfolio of Georgia Helena Burki's creative work. Photography.">
     <script src="https://cdn.tailwindcss.com"></script>
 <style>
-  
-h5{
-    font-weight: 550;
-    margin-top: 70px;
-}
-
-.pic {
-  max-width: 600px;
-    margin: auto;
-    margin-top: 2%;
-    margin-bottom: 4%;
-    align-content: center;
-    justify-content: center;
-}
 
 .mySlides img{
   max-height: 700px;
@@ -41,11 +27,23 @@ h5{
       text-align: center;
 }
 
-    /* change this for mobile view */
-@media screen and (min-width: 760px) {
-#p {
-    font-size: 90%;
+.footer {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;          /* adjust */
+  transform: translateX(-50%);
+  width: max-content;    /* shrink to text width */
+  text-align: center;
+  z-index: 50;
 }
+
+.w3-display-right {
+  margin-right: 50px;
+}
+
+    /* change this for mobile view */
+@media screen and (min-width: 100px) {
+
 }
 /* change this for desktop view */
 @media screen and (min-width: 760px) {
@@ -110,7 +108,6 @@ h5{
                             <a href="africa.html">Out of Africa</a>
                         </div><!--closes dropdown-content-->
                     </div><!--closes dropdown-->
-                    <br>
                 <!-- shows -->                
                 <div class="dropdown">
                     <button type="button" class="dropbtn" aria-expanded="false" aria-controls="menu-photography">
@@ -132,9 +129,9 @@ h5{
     <!-- content -->
 
 <button class="w3-button w3-display-left" onclick="plusDivs(-1)">❮</button>
-   <div class="flex-1 p-10 px-auto flex flex-col">
+   <div class="flex-1 p-10 px-auto flex flex-col"><!--opens main-->
 
-<div>
+<div id="body"><!--opens second-->
 
   <div class="mySlides" style="display: block;">
   <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Currently/Piece+inspired+by+Felix+Gonzalez+Torres.jpg" data-lightbox="mygallery">
@@ -148,21 +145,21 @@ h5{
   <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Currently/April_2026+-+4.jpeg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Currently/April_2026+-+4.jpeg" alt="IMG_3868">
   </a>
-  <p class="caption"><i>La Poesia nace del dolor / visions, 2026</i></p>
+  <p class="caption"><i>La Poesia nace del dolor / visions, mixed media on paper, 2026</i></p>
   </div>
 
   <div class="mySlides">
   <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Currently/this-is-not-permanent.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Currently/this-is-not-permanent.jpg" alt="IMG_3868">
   </a>
-  <p class="caption"><i>This is not permanent, 2026</i></p>
+  <p class="caption"><i>This is not permanent, gouache on paper, 2026</i></p>
   </div>
 
   <div class="mySlides">
   <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Currently/April_2026+-+3.jpeg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Currently/April_2026+-+3.jpeg" alt="IMG_3868">
   </a>
-  <p class="caption"><i>Mirrors (dvama), 2026</i><br><br><span style="color: rgb(0, 179, 255);">“If two go on a long journey<br>
+  <p class="caption"><i>Mirrors (dvama), gouache and coloured pencil on paper, 2026</i><br><br><span style="color: rgb(0, 179, 255);">“If two go on a long journey<br>
 they will not stop even if there is no road.<br>
 They will wander quiet across the earth -<br>
 If two share destiny,<br>
@@ -174,30 +171,30 @@ They will lie pure in this land”</span></p>
   <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Currently/April_2026+-+5.jpeg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Currently/April_2026+-+5.jpeg" alt="IMG_3868">
   </a>
-  <p class="caption"><i>Making contact, 2026</i></p>
+  <p class="caption"><i>Making contact, mixed media on paper, 2026</i></p>
   </div>
 
   <div class="mySlides" style="display: none;">
   <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Currently/Family.jpg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Currently/Family.jpg" alt="IMG_3868">
   </a>
-  <p class="caption"><i>Brothers in Arms, 2026</i></p>
+  <p class="caption"><i>Brothers in Arms, framed photographs, 2026</i></p>
   </div>
 
    <div class="mySlides" id="family">
   <a href="https://port888.s3.us-west-1.amazonaws.com/Assets/Currently/April_2026+-+6.jpeg" data-lightbox="mygallery">
     <img src="https://port888.s3.us-west-1.amazonaws.com/Assets/Currently/April_2026+-+6.jpeg" alt="IMG_3868">
   </a>
-  <p class="caption"><i>Families on a mission, 2026</i></p>
+  <p class="caption"><i>Families on a mission, framed photographs, 2026</i></p>
   </div>
 
-</div>
-</div>
+</div><!--closes second-->
+</div><!--closes main-->
 <button class="w3-button w3-display-right" onclick="plusDivs(+1)">❯</button>
 
  
 <div class="footer text-sm text-slate-400 text-center mt-auto pt-10">Georgia Helena Burki © All Rights Reserved</div>
-</div>
+
 <script>
     var slideIndex = 1;
     showDivs(slideIndex);
