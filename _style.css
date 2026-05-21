@@ -153,7 +153,6 @@ p {
 }
 
 .landscape {
-  display: flex;
   max-width: 350px;
   padding-bottom: 1%;
   max-width: 100%;
